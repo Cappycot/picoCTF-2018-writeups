@@ -1,0 +1,24 @@
+watch flag_buf
+run
+finish
+print flag_buf
+x <addr>
+x/12 <addr>
+
+For some rea
+The flag is being stored in the first 10 words, the last word having several null terminators you can remove when converting hex to ASCII.
+
+ocip{FTC_bDgs_Sir3pU35u__Luf6c6a28d1}
+
+ocip
+{FTC
+_bDg
+s_Si
+r3pU
+35u_
+_Luf
+6c6a
+28d1
+}
+
+picoCTF{gDb_iS_sUp3r_u53fuL_a6c61d82}

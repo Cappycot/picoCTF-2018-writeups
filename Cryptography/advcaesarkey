@@ -1,0 +1,18 @@
+4-'3evh?'c)7%t#e-r,g6u#.9uv#%tg2v#7g'w6gA
+picoCTF{
+
+The #s are probably _s, so we are expecting an increment of 95 - 43 = 52 if they are having bit values pushed up.
+
+Since we know the first eight characters are "picoCTF{" we can deduce how many places they are being moved up.
+4 to p: 112 - 52 = 60
+- to i: 105 - 45 = 60
+' to c: 99 - 39 = 60
+3 to o: 111 - 51 = 60
+e to C: 67 - 101 = -34
+v to T: 84 - 118 = -34
+h to F: 70 - 104 = -34
+
+
+Based on this, I'm certain we will be skipping characters that are not in the set of before letters or after letters.
+
+
